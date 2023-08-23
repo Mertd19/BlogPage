@@ -1,0 +1,46 @@
+/* 
+Project name: Blog Pages
+Project auther:Bil. Müh. Mert Dede
+Project year:2023
+Project version:1.0
+*/
+
+/* Config File */
+*{
+    box-sizing: border-box!important;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* nav */
+nav{
+    opacity: .8;
+    z-index: 1;
+}
+/* header */
+header .jumbotron{
+    background-image: url(images/header/header1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10rem;
+    text-align: center;
+    height: 30rem;
+    opacity: .8;
+    z-index: -1;
+}
+header .jumbotron .h2{
+    text-transform: uppercase;
+}
+header .jumbotron .p{
+    text-transform: lowercase;
+}
+/* breadcrumb */
+nav ol.breadcrumb{
+    background-color: black;
+    opacity: .9;
+}
