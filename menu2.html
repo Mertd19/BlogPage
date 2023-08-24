@@ -17,10 +17,16 @@
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- External Css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Jquery ui css and js -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- blog js -->
+    <script src="blog.js"></script>
 </head>
 
 <body>
@@ -139,10 +145,10 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="header">
-                        <h6>Arama</h6>
                         <div class="card-body">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Arama Alanı">
+                                <input id="tagsSearch" type="text" class="form-control" placeholder="Arama Alanı">
+                                <i class="fa fa-search fa-2x ml-2"></i>
                             </div>
                         </div>
                     </div>
