@@ -71,10 +71,61 @@
                     <li class="nav-item">
                         <a href="#iletisim" class="nav-link">İletişim</a>
                     </li>
+                    <li class="nav-item">
+                        <button id="giris" class="p-1 bg-dark border-0 mt-1 text-white">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myUye" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>Üye Girişi</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="username">Kullanıcı Adınız : </label>
+                                <input type="text" class="form-control" id="username" placeholder="Kullanıcı Adınız.">
+                                <p id="usernameHata" class="text-danger text-center"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon numaranız :</label>
+                                <input id="phone" type="text" class="form-control" placeholder="Telefon Numaranız.">
+                                <p id="phoneHata" class="text-danger text-center"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Şifreniz : </label>
+                                <span class="input-group-text">
+                                    <input type="password" class="form-control" id="password" placeholder="Şifreniz.">
+                                    <i class="fa fa-eye ml-2" class="text-danger" id="show_eye"
+                                        onclick="password_show_hide();"></i>
+                                    <i class="fa fa-eye-slash d-none ml-2" class="text-danger" id="hide_eye"
+                                        onclick="password_show_hide();"></i></span>
+                                <p id="passwordHata" class="text-danger text-center"></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="reset" class="btn btn-danger w-100">Temizle</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button id="btnSubmit" type="submit" class="btn btn-primary w-100">Giriş
+                                        Yap</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header -->
     <header>
         <div class="jumbotron text-dark">
