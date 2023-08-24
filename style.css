@@ -19,7 +19,7 @@ body{
 }
 /* nav */
 nav{
-    opacity: .8;
+    opacity: .7;
     z-index: 1;
 }
 /* header */
@@ -43,4 +43,15 @@ header .jumbotron .p{
 nav ol.breadcrumb{
     background-color: black;
     opacity: .9;
+}
+/* main */
+main .card .card-header {
+    padding: .3rem 1.25rem ;
+}
+main .card .card-header h4{
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+main .card .card-body h4{
+    text-transform: capitalize;
 }
