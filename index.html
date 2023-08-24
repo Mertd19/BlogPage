@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="45">
     <!-- Menu -->
     <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
         <div class="container">
@@ -37,6 +37,23 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="ml-auto navbar-nav">
                     <li class="nav-item">
+                        <a href="#atakule" class="nav-link">Atakule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#corum-muzesi" class="nav-link">Çorum Müzesi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kiz-kulesi" class="nav-link">Kız Kulesi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#table" class="nav-link">Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#asti" class="nav-link">Aşti</a>
+                    </li>
+                </ul>
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item">
                         <a href="#" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
@@ -46,7 +63,7 @@
                         <a href="" class="nav-link">Menu 3</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Menu 4</a>
+                        <a href="#iletisim" class="nav-link">İletişim</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +86,7 @@
             <div class="col-md-8">
                 <div class="card mb-2">
                     <div class="card-header">
-                        <h4>Ankara</h4>
+                        <h4 id="atakule">Ankara</h4>
                     </div>
                     <img src="images/main/ankara.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -84,7 +101,7 @@
                 </div>
                 <div class="card mb-2">
                     <div class="card-header">
-                        <h4>İSTANBUL</h4>
+                        <h4 id="kiz-kulesi">İSTANBUL</h4>
                     </div>
                     <img src="images/main/kizkulesi.jpeg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -99,7 +116,7 @@
                 </div>
                 <div class="card mb-2">
                     <div class="card-header">
-                        <h4>ÇORUM</h4>
+                        <h4 id="corum-muzesi">ÇORUM</h4>
                     </div>
                     <img src="images/main/corummuzesi.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -115,7 +132,48 @@
                 </div>
                 <div class="card mb-2">
                     <div class="card-header">
-                        <h4>ANKARA</h4>
+                        <h4 id="table">TABLE</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>Başlık 1</th>
+                                        <th>Başlık 2</th>
+                                        <th>Başlık 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>İçerik 1</td>
+                                        <td>İçerik 2</td>
+                                        <td>İçerik 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>İçerik 1.1</td>
+                                        <td>İçerik 2.1</td>
+                                        <td>İçerik 3.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>İçerik 1.2</td>
+                                        <td>İçerik 2.2</td>
+                                        <td>İçerik 3.2</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="text-center" colspan="3">Mert Dede</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="opacity: .6;" class="card-footer">Tarih</div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <h4 id="asti">ANKARA</h4>
                     </div>
                     <img src="images/main/asti.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -128,15 +186,16 @@
                     </div>
                     <div style="opacity: .6;" class="card-footer">Tarih</div>
                 </div>
+
             </div>
             <!-- Sağ taraf -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="header">
-                        <h6>Arama</h6>
                         <div class="card-body">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Arama Alanı">
+                                <i class="fa fa-search fa-2x ml-2"></i>
                             </div>
                         </div>
                     </div>
@@ -183,6 +242,63 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
+    <footer class="text-white bg-dark" id="iletisim">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 mt-5 mb-4">
+                    <div class="row">
+                        <a class="text-decoration-none text-center" target="_blank"
+                            href="https://www.linkedin.com/in/mert-dede-687909172"><i
+                                class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> /mert-dede-687909172</a>
+                    </div>
+                    <div class="row">
+                        <a class="text-decoration-none" target="_blank" href="https://github.com/Mertd19"><i
+                                class="fa fa-github-square fa-2x" aria-hidden="true"></i> /Mertd19</a>
+                    </div>
+                    <div class="row">
+                        <a class="text-decoration-none" target="_blank" href="mailto:mertdd19@gmail.com"><i
+                                class="fa fa-envelope fa-2x" aria-hidden="true"></i> mertdd19@gmail.com</a>
+                    </div>
+                    <div class="row">
+                        <a class="text-decoration-none" target="_blank"
+                            href="https://www.instagram.com/romantik.odun19"><i class="fa fa-instagram fa-2x"
+                                aria-hidden="true"></i> /romantik.odun19</a>
+                    </div>
+                    <div class="row mt-4">
+                        <p>Bütün Hakları Saklıdır &copy;</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 mb-4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="421" height="256" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=%C3%A7orum&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://embedgooglemap.net/124/">avatar 123movies</a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: center;
+                                    height: 256px;
+                                    width: 421px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">embed google maps on website</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 256px;
+                                    width: 421px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

@@ -45,27 +45,206 @@
                         <a href="" class="nav-link">Menu 3</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Menu 4</a>
+                        <a href="#iletisim" class="nav-link">İletişim</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Header -->
     <header>
         <div class="jumbotron text-dark mb-1">
             <div class="container">
                 <h2 class="h2 display-4">Kişisel Blog Sayfası</h2>
                 <p class="p" class="text-capitalize">Kişisel Blog sayfası açıklaması</p>
-                <a class="btn btn-primary" href="#">Detaylar ...</a>
+                <a class="btn btn-primary" href="#breadcrumb">Detaylar ...</a>
             </div>
         </div>
     </header>
-    <nav aria-label="breadcrumb">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" id="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Menu 2</li>
         </ol>
     </nav>
+    <!-- Main -->
+    <main class="container" id="main">
+        <div class="row">
+            <!-- Sol taraf -->
+            <div class="col-md-8">
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <h4 id="atakule">Ankara</h4>
+                    </div>
+                    <img src="images/main/ankara.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Atakule</h4>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolores,
+                            perferendis. Labore, dolore doloremque quasi officiis, quaerat corporis eum voluptas fugiat
+                            velit illo sint consequuntur, unde a qui veniam! At, rem!</p>
+                        <button class="btn btn-warning">Detay</button>
+                    </div>
+                    <div style="opacity: .6;" class="card-footer">Tarih</div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <h4 id="kiz-kulesi">İSTANBUL</h4>
+                    </div>
+                    <img src="images/main/kizkulesi.jpeg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">kız kulesi</h4>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Omnis temporibus
+                            praesentium tenetur animi quasi, iure cumque corrupti ducimus eum, suscipit aperiam
+                            explicabo molestiae commodi non sint nam quis dolorem sapiente.</p>
+                        <button class="btn btn-warning">Detay</button>
+                    </div>
+                    <div style="opacity: .6;" class="card-footer">Tarih</div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <h4 id="corum-muzesi">ÇORUM</h4>
+                    </div>
+                    <img src="images/main/corummuzesi.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Çorum müzesi</h4>
+                        <p class="card-text text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Atque architecto,
+                            necessitatibus obcaecati aperiam debitis pariatur eaque nesciunt aspernatur dolor deserunt
+                            accusantium aliquid laudantium laborum corporis asperiores maxime temporibus, deleniti
+                            commodi!</p>
+                        <button class="btn btn-warning">Detay</button>
+                    </div>
+                    <div style="opacity: .6;" class="card-footer">Tarih</div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <h4 id="asti">ANKARA</h4>
+                    </div>
+                    <img src="images/main/asti.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Aşti</h4>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Saepe ad dicta
+                            odio explicabo doloremque pariatur ex nisi quia, magni id veritatis eum, accusamus velit
+                            deleniti in rerum, ipsa asperiores labore!</p>
+                        <button class="btn btn-warning">Detay</button>
+                    </div>
+                    <div style="opacity: .6;" class="card-footer">Tarih</div>
+                </div>
+            </div>
+            <!-- Sağ taraf -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="header">
+                        <h6>Arama</h6>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Arama Alanı">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-5 mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0 text-center text-muted">En çok ziyaret edilenler</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Ankara</a></li>
+                                    <li><a href="#">Bartın</a></li>
+                                    <li><a href="#">İstanbul</a></li>
+                                    <li><a href="#">Eskişehir</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="">Çorum</a></li>
+                                    <li><a href="">Sinop</a></li>
+                                    <li><a href="">Samsun</a></li>
+                                    <li><a href="">Konya</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h5 class="mb-0 text-center text-muted">Etiketler</h5>
+                    </div>
+                    <div class="card-body">
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">Deneme</a>
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">Den</a>
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">De</a>
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">Den</a>
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">Dene</a>
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">Denem</a>
+                        <a class="btn btn-outline-primary border-radius mt-2" href="">Deneme 6</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-white bg-dark" id="iletisim">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 mb-4 ">
+                    <div class="row ml-5 mt-1">
+                        <a class="text-decoration-none text-center" target="_blank"
+                            href="https://www.linkedin.com/in/mert-dede-687909172"><i
+                                class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> /mert-dede-687909172</a>
+                    </div>
+                    <div class="row ml-5 mt-1">
+                        <a class="text-decoration-none" target="_blank" href="https://github.com/Mertd19"><i
+                                class="fa fa-github-square fa-2x" aria-hidden="true"></i> /Mertd19</a>
+                    </div>
+                    <div class="row ml-5 mt-1">
+                        <a class="text-decoration-none" target="_blank" href="mailto:mertdd19@gmail.com"><i
+                                class="fa fa-envelope fa-2x" aria-hidden="true"></i> mertdd19@gmail.com</a>
+                    </div>
+                    <div class="row ml-5 mt-1">
+                        <a class="text-decoration-none" target="_blank"
+                            href="https://www.instagram.com/romantik.odun19"><i class="fa fa-instagram fa-2x"
+                                aria-hidden="true"></i> /romantik.odun19</a>
+                    </div>
+                    <div class="row mt-4 ml-5">
+                        <p>Bütün Hakları Saklıdır &copy;</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 mb-4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="421" height="256" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=%C3%A7orum&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://embedgooglemap.net/124/">avatar 123movies</a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: center;
+                                    height: 256px;
+                                    width: 421px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">embed google maps on website</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 256px;
+                                    width: 421px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

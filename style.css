@@ -16,10 +16,11 @@ html{
 }
 body{
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
 }
 /* nav */
 nav{
-    opacity: .7;
+    opacity: .9;
     z-index: 1;
 }
 /* header */
@@ -54,4 +55,11 @@ main .card .card-header h4{
 }
 main .card .card-body h4{
     text-transform: capitalize;
+}
+/* footer */
+footer{
+    min-height: 15rem;
+}
+footer a{
+    color: white;
 }
